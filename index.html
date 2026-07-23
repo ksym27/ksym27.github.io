@@ -1,28 +1,226 @@
 <!DOCTYPE html>
-<html lang="ja">
+
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Takehiro Kashiyama</title>
+
+  <style>
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #222222;
+      background-color: #ffffff;
+    }
+
+    header {
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 2.4rem;
+    }
+
+    h2 {
+      margin-top: 40px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    p {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: #0056a6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .affiliation {
+      margin-top: 0;
+      color: #555555;
+    }
+
+    .research-list {
+      margin-top: 16px;
+      padding-left: 24px;
+    }
+
+    .link-button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 14px;
+      border: 1px solid #0056a6;
+      border-radius: 4px;
+    }
+
+    .topics {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .topics li {
+      padding: 16px 0;
+      border-bottom: 1px solid #dddddd;
+    }
+
+    .topic-date {
+      display: inline-block;
+      width: 130px;
+      vertical-align: top;
+      color: #666666;
+      font-weight: bold;
+    }
+
+    .topic-text {
+      display: inline-block;
+      width: calc(100% - 140px);
+      vertical-align: top;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #cccccc;
+      color: #777777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 24px 18px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .topic-date {
+        display: block;
+        width: auto;
+        margin-bottom: 4px;
+      }
+
+      .topic-text {
+        display: block;
+        width: auto;
+      }
+    }
+  </style>
+
 </head>
+
 <body>
-  <h1>Takehiro Kashiyama</h1>
+  <header>
+    <h1>Takehiro Kashiyama</h1>
 
-  <p>
-    Associate Professor<br>
+<p class="affiliation">
+  Associate Professor<br>
+
+  <a href="https://kyoto.cseas.kyoto-u.ac.jp/"
+     target="_blank"
+     rel="noopener noreferrer">
     Center for Southeast Asian Studies, Kyoto University
-  </p>
+  </a>
+</p>
 
-  <h2>Research</h2>
+
+  </header>
+
+  <main>
+    <section>
+      <h2>Research</h2>
+
 
   <p>
     My research field is Geospatial Information Science.
   </p>
 
-  <ul>
+  <p>
+    My research aims to understand urban and regional systems
+    by studying urban structure, human mobility, and people's behavior.
+  </p>
+
+  <ul class="research-list">
     <li>Urban Spatial Analysis</li>
     <li>Human Mobility Analysis</li>
     <li>Behavioral Modeling</li>
   </ul>
+
+  <a class="link-button"
+     href="https://researchmap.jp/kashiyama"
+     target="_blank"
+     rel="noopener noreferrer">
+    View Researchmap
+  </a>
+</section>
+
+<section>
+  <h2>Topics</h2>
+
+  <ul class="topics">
+    <li>
+      <span class="topic-date">June 2026</span>
+
+      <span class="topic-text">
+        I organized a special issue titled
+        “New Developments in Geospatial Analysis Using Human Mobility Big Data”
+        for the journal of the Institute of Systems, Control and
+        Information Engineers.
+      </span>
+    </li>
+
+    <li>
+      <span class="topic-date">May 2026</span>
+
+      <span class="topic-text">
+        Our paper published in
+        <em>Computer-Aided Civil and Infrastructure Engineering</em>,
+        “Nationwide synthetic human mobility dataset construction
+        from limited travel surveys and open data,”
+        ranked among the top 10% most viewed papers in 2025.
+      </span>
+    </li>
+
+    <li>
+      <span class="topic-date">March 2026</span>
+
+      <span class="topic-text">
+        We presented
+        “Automatic Detection of Encroaching Street Trees Using
+        In-Vehicle Camera Images”
+        at the 2026 National Convention of the Information
+        Processing Society of Japan.
+      </span>
+    </li>
+
+    <li>
+      <span class="topic-date">December 2025</span>
+
+      <span class="topic-text">
+        I joined the Center for Southeast Asian Studies,
+        Kyoto University, as an Associate Professor.
+      </span>
+    </li>
+  </ul>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Takehiro Kashiyama</p>
+  </footer>
 </body>
 </html>
